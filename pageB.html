@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QCM - Entrepreneuriat</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f6f9; }
+    header { display:flex; align-items:center; justify-content:center; background:#2c3e50; padding:15px; color:white; }
+    header img { height:50px; margin-right:15px; }
+    footer { background:#2c3e50; color:white; padding:10px; text-align:center; margin-top:20px; }
+    main { padding: 15px; max-width: 900px; margin:auto; }
+    h1 { color: #f9f9f9; font-size: 1.5em; margin-bottom: 10px; text-align:center; }
+    .question { margin: 20px 0; padding: 15px; background: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .question p { margin-bottom:10px; }
+    .result { margin-top: 10px; font-weight: bold; }
+    button { margin-top: 10px; padding: 10px 15px; background: #3498db; color: #fff; border: none; border-radius: 5px; cursor: pointer; font-size:1em; }
+    button:hover { background: #2980b9; }
+    .score { font-weight: bold; font-size: 1.2em; color:#2c3e50; margin-top:20px; text-align:center; }
+    label { display:block; margin-bottom:5px; }
+    .correct { color: green; font-weight: bold; }
+    .incorrect { color: red; font-weight: bold; }
+    @media (max-width: 768px) {
+      body { font-size: 16px; }
+      .question { padding: 12px; }
+      button { width:100%; }
+    }
+    @media (max-width: 480px) {
+      header { flex-direction: column; font-size:1em; padding:10px; }
+      header img { margin-right:0; margin-bottom:5px; }
+      h1 { font-size: 1.2em; }
+      body { font-size: 15px; }
+      .question { padding:10px; margin:15px 0; }
+      label { font-size: 0.95em; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    
+        <img src="WhatsApp Image 2025-10-03 at 14.13.33_c0b3d3e4.jpg" alt="Logo">
+        <h1>Communauté Virtuelle de Yop.Nord</h1>
+      </header>
+ 
+  <main>
+   <h2>QCM - Entrepreneuriat et creation d' entreprise</h2>
+    <form id="quiz">
+
+      <!-- QUESTIONS (inchangées, j'ai corrigé uniquement la q19 malformée) -->
+      <div class="question" data-q="1">
+        <div class="meta">Q1 — Choix unique</div>
+        <strong>Selon le document, l'entrepreneuriat peut se définir principalement comme :</strong>
+        <label><input type="radio" name="q1" value="a"> La gestion quotidienne des ressources d'une entreprise existante.</label>
+        <label><input type="radio" name="q1" value="b"> La découverte, l'évaluation et l'exploitation d'opportunités pour introduire de nouvelles offres.</label>
+        <label><input type="radio" name="q1" value="c"> Un synonyme strict de gestion financière.</label>
+        <label><input type="radio" name="q1" value="d"> Une activité exclusivement réservée aux grandes entreprises.</label>
+      </div>
+
+      <div class="question" data-q="2">
+        <div class="meta">Q2 — Choix multiples</div>
+        <strong>Parmi les éléments suivants, lesquels font partie des dimensions clés de l'entrepreneuriat citées ?</strong>
+        <label><input type="checkbox" name="q2" value="a"> Création de valeur</label>
+        <label><input type="checkbox" name="q2" value="b"> Pratique religieuse</label>
+        <label><input type="checkbox" name="q2" value="c"> Prise de risque</label>
+        <label><input type="checkbox" name="q2" value="d"> Innovation</label>
+      </div>
+
+      <div class="question" data-q="3">
+        <div class="meta">Q3 — Choix unique</div>
+        <strong>Selon Verstraete (2000), l'entrepreneuriat est :</strong>
+        <label><input type="radio" name="q3" value="a"> Un phénomène simple et sans nécessité de modélisation.</label>
+        <label><input type="radio" name="q3" value="b"> Un phénomène trop complexe pour être réduit à une simple définition et nécessitant une modélisation.</label>
+        <label><input type="radio" name="q3" value="c"> Strictement équivalent au statut d'auto-entrepreneur.</label>
+        <label><input type="radio" name="q3" value="d"> Exclusivement lié à l'innovation technologique.</label>
+      </div>
+
+      <div class="question" data-q="4">
+        <div class="meta">Q4 — Choix multiples</div>
+        <strong>Quelles sont les formes de création entrepreneuriale mentionnées dans le document ?</strong>
+        <label><input type="checkbox" name="q4" value="a"> Création pure d'entreprise</label>
+        <label><input type="checkbox" name="q4" value="b"> Essaimage</label>
+        <label><input type="checkbox" name="q4" value="c"> Reprise d'entreprise</label>
+        <label><input type="checkbox" name="q4" value="d"> Nationalisation</label>
+      </div>
+
+      <div class="question" data-q="5">
+        <div class="meta">Q5 — Choix unique</div>
+        <strong>Qu'est-ce que l'«essaimage» ?</strong>
+        <label><input type="radio" name="q5" value="a"> Le fait de fermer une entreprise pour en ouvrir une autre.</label>
+        <label><input type="radio" name="q5" value="b"> Une pratique où une entreprise favorise le départ de salariés et les aide à créer leur propre entreprise.</label>
+        <label><input type="radio" name="q5" value="c"> Une fusion entre deux entreprises.</label>
+        <label><input type="radio" name="q5" value="d"> Une méthode de financement bancaire.</label>
+      </div>
+
+      <div class="question" data-q="6">
+        <div class="meta">Q6 — Choix uniques</div>
+        <strong>Lequel des éléments suivants n'est PAS cité comme élément de la liste de contrôle de l'entrepreneuriat ?</strong>
+        <label><input type="radio" name="q6" value="a"> Vérifier son propre potentiel</label>
+        <label><input type="radio" name="q6" value="b"> Détecter les opportunités</label>
+        <label><input type="radio" name="q6" value="c"> Connaître les ressources nécessaires</label>
+        <label><input type="radio" name="q6" value="d"> Fixer le prix des actions en bourse</label>
+      </div>
+
+      <div class="question" data-q="7">
+        <div class="meta">Q7 — Choix multiples</div>
+        <strong>Les composantes de l'entrepreneuriat incluent :</strong>
+        <label><input type="checkbox" name="q7" value="a"> La mentalité entrepreneuriale</label>
+        <label><input type="checkbox" name="q7" value="b"> Le processus entrepreneurial</label>
+        <label><input type="checkbox" name="q7" value="c"> La méthode entrepreneuriale</label>
+        <label><input type="checkbox" name="q7" value="d"> Le monopole d'État</label>
+      </div>
+
+      <div class="question" data-q="8">
+        <div class="meta">Q8 — Choix unique</div>
+        <strong>Parmi les auteurs suivants, qui a mis l'accent sur l'importance de l'incertitude ?</strong>
+        <label><input type="radio" name="q8" value="a"> Schumpeter</label>
+        <label><input type="radio" name="q8" value="b"> Knight</label>
+        <label><input type="radio" name="q8" value="c"> Say</label>
+        <label><input type="radio" name="q8" value="d"> Cantillon</label>
+      </div>
+
+      <div class="question" data-q="9">
+        <div class="meta">Q9 — Choix unique</div>
+        <strong>Schumpeter est surtout connu pour associer l'entrepreneur à :</strong>
+        <label><input type="radio" name="q9" value="a"> La stabilité du marché.</label>
+        <label><input type="radio" name="q9" value="b"> L'introduction d'innovations provoquant des déséquilibres.</label>
+        <label><input type="radio" name="q9" value="c"> La gestion des ressources humaines seulement.</label>
+        <label><input type="radio" name="q9" value="d"> La comptabilité fiscale.</label>
+      </div>
+
+      <div class="question" data-q="10">
+        <div class="meta">Q10 — Choix multiples</div>
+        <strong>Selon le document, que permet l'entrepreneuriat dans l'économie ?</strong>
+        <label><input type="checkbox" name="q10" value="a"> Stimuler la croissance économique</label>
+        <label><input type="checkbox" name="q10" value="b"> Créer des emplois</label>
+        <label><input type="checkbox" name="q10" value="c"> Empêcher toute innovation</label>
+        <label><input type="checkbox" name="q10" value="d"> Renouveler le parc d'entreprises</label>
+      </div>
+
+      <div class="question" data-q="11">
+        <div class="meta">Q11 — Choix unique</div>
+        <strong>Quel exemple local est cité dans le document pour illustrer une innovation entrepreneuriale ?</strong>
+        <label><input type="radio" name="q11" value="a"> Les VTC à Abidjan</label>
+        <label><input type="radio" name="q11" value="b"> Les grandes banques européennes</label>
+        <label><input type="radio" name="q11" value="c"> L'agriculture traditionnelle</label>
+        <label><input type="radio" name="q11" value="d"> Les musées nationaux</label>
+      </div>
+
+      <div class="question" data-q="12">
+        <div class="meta">Q12 — Choix uniques</div>
+        <strong>Selon Cantillon, l'entrepreneur est :</strong>
+        <label><input type="radio" name="q12" value="a"> Quelqu'un qui prend des risques en achetant des matières premières à un prix certain pour les revendre à un prix incertain.</label>
+        <label><input type="radio" name="q12" value="b"> Un fonctionnaire public.</label>
+        <label><input type="radio" name="q12" value="c"> Un employé du secteur bancaire.</label>
+        <label><input type="radio" name="q12" value="d"> Un chercheur académique uniquement.</label>
+      </div>
+
+      <div class="question" data-q="13">
+        <div class="meta">Q13 — Choix multiples</div>
+        <strong>Quelles actions aident à développer une mentalité entrepreneuriale ?</strong>
+        <label><input type="checkbox" name="q13" value="a"> Cultiver la créativité</label>
+        <label><input type="checkbox" name="q13" value="b"> Ne jamais apprendre de ses erreurs</label>
+        <label><input type="checkbox" name="q13" value="c"> Améliorer ses compétences</label>
+        <label><input type="checkbox" name="q13" value="d"> Prendre des responsabilités</label>
+      </div>
+
+      <div class="question" data-q="14">
+        <div class="meta">Q14 — Choix unique</div>
+        <strong>Le processus entrepreneurial commence généralement par :</strong>
+        <label><input type="radio" name="q14" value="a"> Repérer des opportunités et son propre potentiel</label>
+        <label><input type="radio" name="q14" value="b"> L'accès immédiat au capital bancaire</label>
+        <label><input type="radio" name="q14" value="c"> La publication d'un brevet</label>
+        <label><input type="radio" name="q14" value="d"> L'obtention d'un diplôme universitaire</label>
+      </div>
+
+      <div class="question" data-q="15">
+        <div class="meta">Q15 — Choix uniques</div>
+        <strong>Qu'appelle-t-on «intrapreneuriat» ?</strong>
+        <label><input type="radio" name="q15" value="a"> La création d'une nouvelle entreprise par des anciens salariés.</label>
+        <label><input type="radio" name="q15" value="b"> Le développement de projets innovants à l'intérieur d'une entreprise existante.</label>
+        <label><input type="radio" name="q15" value="c"> La cession d'entreprise au gouvernement.</label>
+        <label><input type="radio" name="q15" value="d"> L'externalisation totale de la production.</label>
+      </div>
+
+      <div class="question" data-q="16">
+        <div class="meta">Q16 — Choix multiples</div>
+        <strong>Parmi ces éléments, lesquels sont nécessaires pour passer des idées aux actes ?</strong>
+        <label><input type="checkbox" name="q16" value="a"> Programmer et gérer des projets</label>
+        <label><input type="checkbox" name="q16" value="b"> Rassembler des personnes et des ressources</label>
+        <label><input type="checkbox" name="q16" value="c"> Ignorer complètement le marché</label>
+        <label><input type="checkbox" name="q16" value="d"> Avoir une idée seule, sans plan</label>
+      </div>
+
+      <div class="question" data-q="17">
+        <div class="meta">Q17 — Choix unique</div>
+        <strong>Quel rôle l'entrepreneuriat joue-t-il dans le renouvellement du parc des entreprises ?</strong>
+        <label><input type="radio" name="q17" value="a"> Il empêche toute nouvelle création.</label>
+        <label><input type="radio" name="q17" value="b"> Il permet de reconstruire le tissu économique par la création d'entreprises ex-nihilo ou la reprise.</label>
+        <label><input type="radio" name="q17" value="c"> Il remplace l'État dans la régulation monétaire.</label>
+        <label><input type="radio" name="q17" value="d"> Il limite la concurrence.</label>
+      </div>
+
+      <div class="question" data-q="18">
+        <div class="meta">Q18 — Choix multiples</div>
+        <strong>Quels facteurs favorisent un écosystème entrepreneurial performant ?</strong>
+        <label><input type="checkbox" name="q18" value="a"> Accès au capital</label>
+        <label><input type="checkbox" name="q18" value="b"> Main-d'œuvre qualifiée</label>
+        <label><input type="checkbox" name="q18" value="c"> Politiques gouvernementales favorables</label>
+        <label><input type="checkbox" name="q18" value="d"> Isolement total des entrepreneurs</label>
+      </div>
+
+      <div class="question" data-q="19">
+        <div class="meta">Q19 — Choix uniques</div>
+        <strong>Qui, parmi ces auteurs, est associé à l'idée de détecter et exploiter des opportunités (alertness) ?</strong>
+        <label><input type="radio" name="q19" value="a"> Kirzner</label>
+        <label><input type="radio" name="q19" value="b"> Weber</label>
+        <label><input type="radio" name="q19" value="c"> McClelland</label>
+        <label><input type="radio" name="q19" value="d"> Say</label>
+      </div>
+
+      <div class="question" data-q="20">
+        <div class="meta">Q20 — Choix multiples</div>
+        <strong>La mentalité entrepreneuriale encourage :</strong>
+        <label><input type="checkbox" name="q20" value="a"> La prise d'initiative</label>
+        <label><input type="checkbox" name="q20" value="b"> L'inaction permanente</label>
+        <label><input type="checkbox" name="q20" value="c"> L'amélioration continue des compétences</label>
+        <label><input type="checkbox" name="q20" value="d"> Le refus d'apprendre de ses erreurs</label>
+      </div>
+
+      <div class="question" data-q="21">
+        <div class="meta">Q21 — Choix unique</div>
+        <strong>Le document indique que l'entrepreneuriat numérique a principalement apporté :</strong>
+        <label><input type="radio" name="q21" value="a"> L'accès aux marchés mondiaux et la possibilité d'opérer en continu</label>
+        <label><input type="radio" name="q21" value="b"> L'arrêt total du commerce international</label>
+        <label><input type="radio" name="q21" value="c"> L'impossibilité d'innover</label>
+        <label><input type="radio" name="q21" value="d"> La disparition des petites entreprises</label>
+      </div>
+
+      <div class="question" data-q="22">
+        <div class="meta">Q22 — Choix multiples</div>
+        <strong>Parmi ces affirmations, lesquelles sont vraies d'après le document ?</strong>
+        <label><input type="checkbox" name="q22" value="a"> L'entrepreneuriat contribue à la compétitivité des économies.</label>
+        <label><input type="checkbox" name="q22" value="b"> L'entrepreneuriat ne crée jamais d'emplois.</label>
+        <label><input type="checkbox" name="q22" value="c"> L'entrepreneuriat restructure des régions et favorise le développement local.</label>
+        <label><input type="checkbox" name="q22" value="d"> L'entrepreneuriat est une source de croissance et d'innovation.</label>
+      </div>
+
+      <div class="question" data-q="23">
+        <div class="meta">Q23 — Choix unique</div>
+        <strong>McClelland (1961) associe l'entrepreneuriat principalement à :</strong>
+        <label><input type="radio" name="q23" value="a"> Le besoin de réalisation (achievement)</label>
+        <label><input type="radio" name="q23" value="b"> Le besoin de loisirs</label>
+        <label><input type="radio" name="q23" value="c"> La passivité économique</label>
+        <label><input type="radio" name="q23" value="d"> L'absence d'innovation</label>
+      </div>
+
+      <div class="question" data-q="24">
+        <div class="meta">Q24 — Choix multiples</div>
+        <strong>Quels sont des exemples d'innovations mentionnées dans la leçon ?</strong>
+        <label><input type="checkbox" name="q24" value="a"> Nouveaux produits</label>
+        <label><input type="checkbox" name="q24" value="b"> Nouvelles structures d'organisation</label>
+        <label><input type="checkbox" name="q24" value="c"> Nouvelles formes de marchés</label>
+        <label><input type="checkbox" name="q24" value="d"> Le retour au troc exclusif</label>
+      </div>
+
+      <div class="question" data-q="25">
+        <div class="meta">Q25 — Choix unique</div>
+        <strong>La définition retenue dans le document décrit l'entrepreneuriat comme :</strong>
+        <label><input type="radio" name="q25" value="a"> Un processus consistant à lancer un projet à partir d'une opportunité, organiser les ressources et assumer les risques et bénéfices.</label>
+        <label><input type="radio" name="q25" value="b"> Un simple hobby.</label>
+        <label><input type="radio" name="q25" value="c"> Une pratique illégale.</label>
+        <label><input type="radio" name="q25" value="d"> Une théorie purement académique sans application pratique.</label>
+      </div>
+
+      <div class="question" data-q="26">
+        <div class="meta">Q26 — Choix multiples</div>
+        <strong>Quels sont, parmi les suivants, des obstacles possibles que doivent repérer et éviter les entrepreneurs ?</strong>
+        <label><input type="checkbox" name="q26" value="a"> Risques mal évalués</label>
+        <label><input type="checkbox" name="q26" value="b"> Méconnaissance des ressources nécessaires</label>
+        <label><input type="checkbox" name="q26" value="c"> Trop d'écoute du marché</label>
+        <label><input type="checkbox" name="q26" value="d"> Absence de plan d'action</label>
+      </div>
+
+      <div class="question" data-q="27">
+        <div class="meta">Q27 — Choix unique</div>
+        <strong>Selon le texte, l'entrepreneuriat social se concentre sur :</strong>
+        <label><input type="radio" name="q27" value="a"> La création d'impact social ou environnemental positif.</label>
+        <label><input type="radio" name="q27" value="b"> L'augmentation des profits uniquement.</label>
+        <label><input type="radio" name="q27" value="c"> L'évasion fiscale.</label>
+        <label><input type="radio" name="q27" value="d"> La suppression des PME.</label>
+      </div>
+
+      <div class="question" data-q="28">
+        <div class="meta">Q28 — Choix multiples</div>
+        <strong>Quelles sont des raisons pour lesquelles les gouvernements soutiennent l'entrepreneuriat ?</strong>
+        <label><input type="checkbox" name="q28" value="a"> Stimuler la compétitivité et la croissance</label>
+        <label><input type="checkbox" name="q28" value="b"> Créer des emplois</label>
+        <label><input type="checkbox" name="q28" value="c"> Encourager la fermeture d'entreprises</label>
+        <label><input type="checkbox" name="q28" value="d"> Favoriser l'innovation</label>
+      </div>
+
+      <div class="question" data-q="29">
+        <div class="meta">Q29 — Choix unique</div>
+        <strong>Laquelle des affirmations suivantes reflète une caractéristique de la méthode entrepreneuriale ?</strong>
+        <label><input type="radio" name="q29" value="a"> C'est un mode de réflexion et d'action basé sur des lignes directrices visant la mise en œuvre du changement.</label>
+        <label><input type="radio" name="q29" value="b"> C'est une doctrine immuable qui refuse l'expérimentation.</label>
+        <label><input type="radio" name="q29" value="c"> C'est une stratégie de non-innovation.</label>
+        <label><input type="radio" name="q29" value="d"> C'est uniquement une méthode comptable.</label>
+      </div>
+
+      <div class="question" data-q="30">
+        <div class="meta">Q30 — Choix uniques</div>
+        <strong>Quel impact les «gazelles» (startups à forte croissance) ont-elles ?</strong>
+        <label><input type="radio" name="q30" value="a"> Peu d'impact sur l'économie.</label>
+        <label><input type="radio" name="q30" value="b"> Elles contribuent fortement à la croissance économique et à la création d'emplois.</label>
+        <label><input type="radio" name="q30" value="c"> Elles ralentissent l'innovation.</label>
+        <label><input type="radio" name="q30" value="d"> Elles favorisent l'isolement des marchés.</label>
+      </div>
+
+      <div class="question" data-q="31">
+        <div class="meta">Q31 — Choix multiples</div>
+        <strong>Quels comportements sont associés aux entrepreneurs selon les behavioristes (p.ex. McClelland, Weber) ?</strong>
+        <label><input type="checkbox" name="q31" value="a"> Besoin de réalisation</label>
+        <label><input type="checkbox" name="q31" value="b"> Indépendance et autorité</label>
+        <label><input type="checkbox" name="q31" value="c"> Conformisme total sans initiative</label>
+        <label><input type="checkbox" name="q31" value="d"> Rejet de toute responsabilité</label>
+      </div>
+
+      <div class="question" data-q="32">
+        <div class="meta">Q32 — Choix uniques</div>
+        <strong>Pour favoriser la réussite entrepreneuriale, le document recommande :</strong>
+        <label><input type="radio" name="q32" value="a"> D'ignorer les compétences et contacts.</label>
+        <label><input type="radio" name="q32" value="b"> De mobiliser savoir-faire, contacts, capital et équipements nécessaires.</label>
+        <label><input type="radio" name="q32" value="c"> De refuser toute forme d'apprentissage.</label>
+        <label><input type="radio" name="q32" value="d"> De fonctionner sans réseau.</label>
+      </div>
+
+      <div style="text-align:center;margin-top:14px">
+        <button type="button" id="submit">Calculer mon score</button>
+      </div>
+
+    </form>
+    <p id="score" class="score"></p>
+  </main>
+
+  <footer>
+    © Copyright TOBA PAUL CHRIST-EMMANUEL
+  </footer>
+
+<script>
+/* Réponses attendues (lettres) */
+const answers = {
+  q1:['b'],
+  q2:['a','c','d'],
+  q3:['b'],
+  q4:['a','b','c'],
+  q5:['b'],
+  q6:['d'],
+  q7:['a','b','c'],
+  q8:['b'],
+  q9:['b'],
+  q10:['a','b','d'],
+  q11:['a'],
+  q12:['a'],
+  q13:['a','c','d'],
+  q14:['a'],
+  q15:['b'],
+  q16:['a','b'],
+  q17:['b'],
+  q18:['a','b','c'],
+  q19:['a'],
+  q20:['a','c'],
+  q21:['a'],
+  q22:['a','c','d'],
+  q23:['a'],
+  q24:['a','b','c'],
+  q25:['a'],
+  q26:['a','b','d'],
+  q27:['a'],
+  q28:['a','b','d'],
+  q29:['a'],
+  q30:['b'],
+  q31:['a','b'],
+  q32:['b']
+};
+
+function normalizeArray(arr){
+  return arr.slice().sort();
+}
+
+function getSelectedFor(name){
+  const els = Array.from(document.querySelectorAll('[name="'+name+'"]'));
+  if(!els || els.length===0) return [];
+  if(els[0].type === 'radio'){
+    const checked = document.querySelector('[name="'+name+'"]:checked');
+    return checked ? [checked.value] : [];
+  } else if(els[0].type === 'checkbox'){
+    return els.filter(e=>e.checked).map(e=>e.value);
+  }
+  return [];
+}
+
+function ensureFeedbackElement(qIndex){
+  let fb = document.getElementById('feedback'+qIndex);
+  if(fb) return fb;
+  // find container (data-q or id)
+  const container = document.querySelector('[data-q="'+qIndex+'"]') || document.getElementById('q'+qIndex);
+  fb = document.createElement('div');
+  fb.id = 'feedback'+qIndex;
+  fb.className = 'result';
+  if(container) container.appendChild(fb);
+  return fb;
+}
+
+function calculateScore(){
+  let score = 0;
+  const keys = Object.keys(answers);
+  keys.forEach(name=>{
+    const qIndex = name.replace('q','');
+    const els = document.querySelectorAll('[name="'+name+'"]');
+    if(!els || els.length===0){
+      // pas d'éléments: ignore
+      return;
+    }
+    const fb = ensureFeedbackElement(qIndex);
+    fb.innerHTML = '';
+    const user = normalizeArray(getSelectedFor(name));
+    const corr = normalizeArray(answers[name]);
+    const isCorrect = JSON.stringify(user) === JSON.stringify(corr);
+    if(isCorrect){
+      score++;
+      fb.innerHTML = '<span class="correct">✅ Correct</span>';
+    } else {
+      // construire le texte des réponses attendues (chercher le label text)
+      const inputs = Array.from(document.querySelectorAll('[name="'+name+'"]'));
+      const expectedTexts = answers[name].map(letter=>{
+        const el = inputs.find(i => i.value === letter);
+        return el ? el.parentElement.innerText.trim() : letter;
+      }).join(' — ');
+      fb.innerHTML = '<span class="incorrect">❌ Mauvaise réponse. Réponse attendue : '+expectedTexts+'</span>';
+    }
+  });
+
+  document.getElementById('score').innerText = 'Votre score : ' + score + ' / ' + Object.keys(answers).length;
+}
+
+/* Brancher le bouton */
+document.getElementById('submit').addEventListener('click', calculateScore);
+</script>
+</body>
+</html>
+s
