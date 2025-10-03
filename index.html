@@ -1,23 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LDDGSTMV1Q"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-LDDGSTMV1Q');
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Architecture des Ordinateurs</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f6f9; display:flex; flex-direction:column; min-height:100vh; }
-    header { background:#2c3e50; color:white; padding:15px; text-align:center; }
-    header img { height:50px; vertical-align:middle; margin-right:10px; }
-    main { padding: 15px; max-width: 900px; margin:auto; flex:1; }
-    h1 { color: #2c3e50; font-size: 1.5em; margin-bottom: 10px; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f6f9; }
+    header { display:flex; align-items:center; justify-content:center; background:#2c3e50; padding:15px; color:white; }
+    header img { height:50px; margin-right:15px; }
+    footer { background:#2c3e50; color:white; padding:10px; text-align:center; margin-top:20px; }
+    main { padding: 15px; max-width: 900px; margin:auto; }
+    h1 { color: #f2f4f5; font-size: 1.5em; margin-bottom: 10px; }
     .question { margin: 20px 0; padding: 15px; background: #fff; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
     .question p { margin-bottom:10px; }
     .result { margin-top: 10px; font-weight: bold; }
@@ -27,15 +20,14 @@
     label { display:block; margin-bottom:5px; }
     .correct { color: green; font-weight: bold; }
     .incorrect { color: red; font-weight: bold; }
-    footer { background:#2c3e50; color:white; text-align:center; padding:10px; margin-top:auto; }
     @media (max-width: 768px) {
       body { font-size: 16px; }
       .question { padding: 12px; }
       button { width:100%; }
     }
     @media (max-width: 480px) {
-      header { font-size:1em; padding:10px; }
-      header img { height:40px; margin-right:5px; }
+      header { flex-direction: column; font-size:1em; padding:10px; }
+      header img { margin-right:0; margin-bottom:5px; }
       h1 { font-size: 1.2em; }
       body { font-size: 15px; }
       .question { padding:10px; margin:15px 0; }
@@ -45,18 +37,267 @@
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo">
-    <span>Communauté Virtuelle de Yop.Nord</span>
+    <img src="WhatsApp Image 2025-10-03 at 14.13.33_c0b3d3e4.jpg" alt="Logo">
+    <h1>Communauté Virtuelle de Yop.Nord</h1>
   </header>
+
   <main>
+    <h1>QCM - Architecture des Ordinateurs (30 questions)</h1>
     <form id="quizForm">
-      <!-- ...toutes tes questions ici... -->
+
+      <!-- Questions 1 à 10 -->
+      <div class="question" id="q1">
+        <p><strong>1. Qui a imaginé la première 'machine analytique' au XIXe siècle ?</strong></p>
+        <label><input type="radio" name="q1" value="0"> Alan Turing</label>
+        <label><input type="radio" name="q1" value="1"> Charles Babbage</label>
+        <label><input type="radio" name="q1" value="0"> John von Neumann</label>
+        <div id="feedback1" class="result"></div>
+      </div>
+
+      <div class="question" id="q2">
+        <p><strong>2. En quelle année est apparu l’ENIAC ?</strong></p>
+        <label><input type="radio" name="q2" value="1"> 1946</label>
+        <label><input type="radio" name="q2" value="0"> 1955</label>
+        <label><input type="radio" name="q2" value="0"> 1936</label>
+        <div id="feedback2" class="result"></div>
+      </div>
+
+      <div class="question" id="q3">
+        <p><strong>3. L’ENIAC a été conçu pour :</strong></p>
+        <label><input type="radio" name="q3" value="0"> Jouer aux échecs</label>
+        <label><input type="radio" name="q3" value="1"> Calculer la faisabilité de la bombe H</label>
+        <label><input type="radio" name="q3" value="0"> Traduire des textes</label>
+        <div id="feedback3" class="result"></div>
+      </div>
+
+      <div class="question" id="q4">
+        <p><strong>4. Le mot 'ordinateur' a été adopté en France par IBM en :</strong></p>
+        <label><input type="radio" name="q4" value="0"> 1946</label>
+        <label><input type="radio" name="q4" value="1"> 1955</label>
+        <label><input type="radio" name="q4" value="0"> 1971</label>
+        <div id="feedback4" class="result"></div>
+      </div>
+
+      <div class="question" id="q5">
+        <p><strong>5. Quel scientifique a proposé en 1936 la machine universelle programmable ?</strong></p>
+        <label><input type="radio" name="q5" value="1"> Alan Turing</label>
+        <label><input type="radio" name="q5" value="0"> Howard Aiken</label>
+        <label><input type="radio" name="q5" value="0"> Konrad Zuse</label>
+        <div id="feedback5" class="result"></div>
+      </div>
+
+      <div class="question" id="q6">
+        <p><strong>6. Quel ordinateur est considéré comme le premier micro-ordinateur (1971) ?</strong></p>
+        <label><input type="radio" name="q6" value="1"> Kenbak-1</label>
+        <label><input type="radio" name="q6" value="0"> Altair 8800</label>
+        <label><input type="radio" name="q6" value="0"> Micral</label>
+        <div id="feedback6" class="result"></div>
+      </div>
+
+      <div class="question" id="q7">
+        <p><strong>7. Qui a inventé le microprocesseur Intel 4004 en 1971 ?</strong></p>
+        <label><input type="radio" name="q7" value="0"> Apple</label>
+        <label><input type="radio" name="q7" value="0"> IBM</label>
+        <label><input type="radio" name="q7" value="1"> Intel</label>
+        <div id="feedback7" class="result"></div>
+      </div>
+
+      <div class="question" id="q8">
+        <p><strong>8. Le premier Macintosh d’Apple est sorti en :</strong></p>
+        <label><input type="radio" name="q8" value="1"> 1984</label>
+        <label><input type="radio" name="q8" value="0"> 1977</label>
+        <label><input type="radio" name="q8" value="0"> 1981</label>
+        <div id="feedback8" class="result"></div>
+      </div>
+
+      <div class="question" id="q9">
+        <p><strong>9. Les ordinateurs de 1945-1958 utilisaient :</strong></p>
+        <label><input type="radio" name="q9" value="1"> Lampes, relais, résistances</label>
+        <label><input type="radio" name="q9" value="0"> Transistors</label>
+        <label><input type="radio" name="q9" value="0"> Circuits intégrés</label>
+        <div id="feedback9" class="result"></div>
+      </div>
+
+      <div class="question" id="q10">
+        <p><strong>10. Les ordinateurs de 1958-1964 utilisent :</strong></p>
+        <label><input type="radio" name="q10" value="1"> Transistors</label>
+        <label><input type="radio" name="q10" value="0"> Lampes</label>
+        <label><input type="radio" name="q10" value="0"> Qubits</label>
+        <div id="feedback10" class="result"></div>
+      </div>
+
+      <!-- Questions 11 à 30 -->
+      <div class="question" id="q11">
+        <p><strong>11. Quels sont les éléments principaux du modèle de Von Neumann ?</strong></p>
+        <label><input type="checkbox" name="q11" value="1"> Mémoire</label>
+        <label><input type="checkbox" name="q11" value="1"> Processeur (CPU)</label>
+        <label><input type="checkbox" name="q11" value="1"> Bus</label>
+        <label><input type="checkbox" name="q11" value="1"> Périphériques</label>
+        <label><input type="checkbox" name="q11" value="0"> Imprimante seule</label>
+        <div id="feedback11" class="result"></div>
+      </div>
+
+      <div class="question" id="q12">
+        <p><strong>12. Qui est à l’origine du modèle universel d’architecture en 1946 ?</strong></p>
+        <label><input type="radio" name="q12" value="0"> Alan Turing</label>
+        <label><input type="radio" name="q12" value="1"> John von Neumann</label>
+        <label><input type="radio" name="q12" value="0"> Charles Babbage</label>
+        <div id="feedback12" class="result"></div>
+      </div>
+
+      <div class="question" id="q13">
+        <p><strong>13. Dans le modèle de Von Neumann, l’ALU sert à :</strong></p>
+        <label><input type="radio" name="q13" value="1"> Effectuer les calculs</label>
+        <label><input type="radio" name="q13" value="0"> Stocker les données</label>
+        <label><input type="radio" name="q13" value="0"> Gérer les périphériques</label>
+        <div id="feedback13" class="result"></div>
+      </div>
+
+      <div class="question" id="q14">
+        <p><strong>14. Dans le modèle de Von Neumann, les instructions sont stockées dans :</strong></p>
+        <label><input type="radio" name="q14" value="1"> La mémoire</label>
+        <label><input type="radio" name="q14" value="0"> Le processeur</label>
+        <label><input type="radio" name="q14" value="0"> Les périphériques</label>
+        <div id="feedback14" class="result"></div>
+      </div>
+
+      <div class="question" id="q15">
+        <p><strong>15. Quel élément permet l’échange d’informations entre CPU, mémoire et périphériques ?</strong></p>
+        <label><input type="radio" name="q15" value="1"> Bus</label>
+        <label><input type="radio" name="q15" value="0"> ROM</label>
+        <label><input type="radio" name="q15" value="0"> BIOS</label>
+        <div id="feedback15" class="result"></div>
+      </div>
+
+      <div class="question" id="q16">
+        <p><strong>16. Quelle mémoire est volatile et perd ses données à l’extinction ?</strong></p>
+        <label><input type="radio" name="q16" value="0"> ROM</label>
+        <label><input type="radio" name="q16" value="1"> RAM</label>
+        <label><input type="radio" name="q16" value="0"> Disque dur</label>
+        <div id="feedback16" class="result"></div>
+      </div>
+
+      <div class="question" id="q17">
+        <p><strong>17. La ROM contient généralement :</strong></p>
+        <label><input type="radio" name="q17" value="1"> BIOS</label>
+        <label><input type="radio" name="q17" value="0"> Programmes en cours</label>
+        <label><input type="radio" name="q17" value="0"> Documents utilisateur</label>
+        <div id="feedback17" class="result"></div>
+      </div>
+
+      <div class="question" id="q18">
+        <p><strong>18. Le processeur est souvent refroidi grâce à :</strong></p>
+        <label><input type="radio" name="q18" value="1"> Ventilateur/ventirad</label>
+        <label><input type="radio" name="q18" value="0"> Batterie</label>
+        <label><input type="radio" name="q18" value="0"> Carte son</label>
+        <div id="feedback18" class="result"></div>
+      </div>
+
+      <div class="question" id="q19">
+        <p><strong>19. Un SSD se différencie d’un HDD car :</strong></p>
+        <label><input type="checkbox" name="q19" value="1"> Il n’a pas de pièces mécaniques</label>
+        <label><input type="checkbox" name="q19" value="1"> Il est plus rapide</label>
+        <label><input type="checkbox" name="q19" value="0"> Il utilise des plateaux rotatifs</label>
+        <div id="feedback19" class="result"></div>
+      </div>
+
+      <div class="question" id="q20">
+        <p><strong>20. La carte graphique possède un processeur spécialisé appelé :</strong></p>
+        <label><input type="radio" name="q20" value="1"> GPU</label>
+        <label><input type="radio" name="q20" value="0"> CPU</label>
+        <label><input type="radio" name="q20" value="0"> DSP</label>
+        <div id="feedback20" class="result"></div>
+      </div>
+
+      <div class="question" id="q21">
+        <p><strong>21. Quel composant connecte tous les éléments d’un PC ?</strong></p>
+        <label><input type="radio" name="q21" value="1"> Carte mère</label>
+        <label><input type="radio" name="q21" value="0"> Carte son</label>
+        <label><input type="radio" name="q21" value="0"> Alimentation</label>
+        <div id="feedback21" class="result"></div>
+      </div>
+
+      <div class="question" id="q22">
+        <p><strong>22. La carte réseau est identifiée par :</strong></p>
+        <label><input type="radio" name="q22" value="1"> Adresse MAC</label>
+        <label><input type="radio" name="q22" value="0"> Adresse IP</label>
+        <label><input type="radio" name="q22" value="0"> Code BIOS</label>
+        <div id="feedback22" class="result"></div>
+      </div>
+
+      <div class="question" id="q23">
+        <p><strong>23. Quel périphérique est une interface d’entrée ?</strong></p>
+        <label><input type="radio" name="q23" value="1"> Clavier</label>
+        <label><input type="radio" name="q23" value="0"> Écran</label>
+        <label><input type="radio" name="q23" value="0"> Imprimante</label>
+        <div id="feedback23" class="result"></div>
+      </div>
+
+      <div class="question" id="q24">
+        <p><strong>24. Quel composant stocke durablement les données même hors tension ?</strong></p>
+        <label><input type="radio" name="q24" value="1"> Disque dur</label>
+        <label><input type="radio" name="q24" value="0"> RAM</label>
+        <label><input type="radio" name="q24" value="0"> Cache</label>
+        <div id="feedback24" class="result"></div>
+      </div>
+
+      <div class="question" id="q25">
+        <p><strong>25. Les ordinateurs centraux (mainframes) sont utilisés pour :</strong></p>
+        <label><input type="radio" name="q25" value="1"> Calculs lourds</label>
+        <label><input type="radio" name="q25" value="0"> Jouer à des jeux</label>
+        <label><input type="radio" name="q25" value="0"> Stocker uniquement des photos</label>
+        <div id="feedback25" class="result"></div>
+      </div>
+
+      <div class="question" id="q26">
+        <p><strong>26. Quels sont des ordinateurs personnels ?</strong></p>
+        <label><input type="checkbox" name="q26" value="1"> PC de bureau</label>
+        <label><input type="checkbox" name="q26" value="1"> Laptop</label>
+        <label><input type="checkbox" name="q26" value="0"> Mainframe</label>
+        <label><input type="checkbox" name="q26" value="0"> Serveur</label>
+        <div id="feedback26" class="result"></div>
+      </div>
+
+      <div class="question" id="q27">
+        <p><strong>27. Les tablettes sont aussi appelées :</strong></p>
+        <label><input type="radio" name="q27" value="1"> Ardoises électroniques</label>
+        <label><input type="radio" name="q27" value="0"> Mini-ordinateurs</label>
+        <label><input type="radio" name="q27" value="0"> Mainframes portables</label>
+        <div id="feedback27" class="result"></div>
+      </div>
+
+      <div class="question" id="q28">
+        <p><strong>28. Un smartphone est défini comme :</strong></p>
+        <label><input type="radio" name="q28" value="1"> Un téléphone intelligent</label>
+        <label><input type="radio" name="q28" value="0"> Un ordinateur quantique</label>
+        <label><input type="radio" name="q28" value="0"> Un simple pager</label>
+        <div id="feedback28" class="result"></div>
+      </div>
+
+      <div class="question" id="q29">
+        <p><strong>29. Un système embarqué est :</strong></p>
+        <label><input type="radio" name="q29" value="1"> Un système spécialisé pour une tâche précise</label>
+        <label><input type="radio" name="q29" value="0"> Un ordinateur polyvalent</label>
+        <label><input type="radio" name="q29" value="0"> Un serveur</label>
+        <div id="feedback29" class="result"></div>
+      </div>
+
+      <div class="question" id="q30">
+        <p><strong>30. Quels sont des ordinateurs du futur ?</strong></p>
+        <label><input type="checkbox" name="q30" value="1"> Ordinateurs quantiques</label>
+        <label><input type="checkbox" name="q30" value="1"> Ordinateurs à ADN</label>
+        <label><input type="checkbox" name="q30" value="1"> Ordinateurs optiques</label>
+        <label><input type="checkbox" name="q30" value="1"> Ordinateurs neuronaux</label>
+        <div id="feedback30" class="result"></div>
+      </div>
+
       <button type="button" onclick="calculateScore()">Calculer mon score</button>
       <p id="score" class="score"></p>
     </form>
   </main>
+
   <footer>
-    © TOBA PAUL CHRIST-EMMANUEL
+    © Copyright TOBA PAUL CHRIST-EMMANUEL
   </footer>
 
 <script>
