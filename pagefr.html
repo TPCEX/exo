@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QCM — Homophones lexicaux et grammaticaux</title>
+  <style>
+    :root{
+      --bg:#f4f6f9;
+      --card:#fff;
+      --accent:#3498db;
+      --accent-dark:#2980b9;
+      --navy:#2c3e50;
+    }
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;margin:0;min-height:100vh;display:flex;flex-direction:column;background:var(--bg);color:#102a43}
+    header{display:flex;align-items:center;justify-content:center;background:var(--navy);padding:16px;color:white}
+    header img{height:50px;margin-right:12px;border-radius:6px}
+    main{flex:1;max-width:1000px;margin:18px auto;padding:18px;width:96%}
+    h1.page-title{color:#fff;background:var(--navy);padding:12px;border-radius:8px;text-align:center;margin:0 0 16px}
+    .intro{max-width:900px;margin:0 auto 12px;color:#334e68;text-align:center}
+    .question{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 20px rgba(16,42,67,.06);margin-bottom:12px}
+    .meta{font-size:0.85rem;color:#486581;margin-bottom:6px}
+    .question strong{display:block;margin-bottom:8px}
+    label{display:block;margin:6px 0;cursor:pointer}
+    input[type="radio"], input[type="checkbox"]{margin-right:8px}
+    .result{margin-top:10px;font-weight:700;min-height:1.2em}
+    .correct{color:green}
+    .incorrect{color:#c72c41}
+    #actions{display:flex;justify-content:center;gap:12px;margin-top:16px}
+    button{padding:10px 16px;background:var(--accent);color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:1rem}
+    button:hover{background:var(--accent-dark)}
+    .score{margin-top:14px;text-align:center;font-weight:800;color:var(--navy)}
+    footer{background:var(--navy);color:#fff;padding:12px;text-align:center}
+    /* responsive button layout */
+    .btn-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+    /* small screens */
+    @media (max-width:768px){
+      body{font-size:15px}
+      .question{padding:12px}
+      button{width:100%;max-width:420px}
+      .btn-row{flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <img src="WhatsApp Image 2025-10-03 at 14.13.33_c0b3d3e4.jpg" alt="Logo">
+        <h1>Communauté Virtuelle de Yop.Nord</h1>
+      </header>
+
+  <main>
+    <h1 class="page-title">QCM — Homophones lexicaux & grammaticaux (32 questions)</h1>
+   
+    <form id="quiz">
+
+      <!-- 1 -->
+      <div class="question" data-q="1">
+        <div class="meta">Q1 — Choix unique</div>
+        <strong>1. Que signifie «aussitôt» ?</strong>
+        <label><input type="radio" name="q1" value="a"> Immédiatement, tout de suite</label>
+        <label><input type="radio" name="q1" value="b"> À une heure précise</label>
+        <label><input type="radio" name="q1" value="c"> Très tard</label>
+        <label><input type="radio" name="q1" value="d"> En différé</label>
+      </div>
+
+      <!-- 2 -->
+      <div class="question" data-q="2">
+        <div class="meta">Q2 — Choix unique</div>
+        <strong>2. Que signifie «aussi tôt» (locution) ?</strong>
+        <label><input type="radio" name="q2" value="a"> De préférence</label>
+        <label><input type="radio" name="q2" value="b"> À une heure très matinale / par opposition à «aussi tard»</label>
+        <label><input type="radio" name="q2" value="c"> Immédiatement</label>
+        <label><input type="radio" name="q2" value="d"> Jamais</label>
+      </div>
+
+      <!-- 3 -->
+      <div class="question" data-q="3">
+        <div class="meta">Q3 — Choix unique</div>
+        <strong>3. «Bientôt» veut dire :</strong>
+        <label><input type="radio" name="q3" value="a"> Très tôt le matin</label>
+        <label><input type="radio" name="q3" value="b"> Dans peu de temps</label>
+        <label><input type="radio" name="q3" value="c"> Toujours</label>
+        <label><input type="radio" name="q3" value="d"> Jamais</label>
+      </div>
+
+      <!-- 4 -->
+      <div class="question" data-q="4">
+        <div class="meta">Q4 — Choix unique</div>
+        <strong>4. «Bien tôt» (locution) signifie :</strong>
+        <label><input type="radio" name="q4" value="a"> Très tôt (référence horaire)</label>
+        <label><input type="radio" name="q4" value="b"> Rapidement (dans peu de temps)</label>
+        <label><input type="radio" name="q4" value="c"> Plus tard</label>
+        <label><input type="radio" name="q4" value="d"> Dans le futur lointain</label>
+      </div>
+
+      <!-- 5 -->
+      <div class="question" data-q="5">
+        <div class="meta">Q5 — Choix unique</div>
+        <strong>5. Quelle est la différence principale entre «plutôt» et «plus tôt» ?</strong>
+        <label><input type="radio" name="q5" value="a"> «Plutôt» indique une préférence ; «plus tôt» indique un moment antérieur.</label>
+        <label><input type="radio" name="q5" value="b"> Ils ont le même sens</label>
+        <label><input type="radio" name="q5" value="c"> «Plutôt» est horaire</label>
+        <label><input type="radio" name="q5" value="d"> «Plus tôt» est synonyme de «de préférence»</label>
+      </div>
+
+      <!-- 6 -->
+      <div class="question" data-q="6">
+        <div class="meta">Q6 — Choix unique</div>
+        <strong>6. «Quoique» (sans espace) peut être remplacé par :</strong>
+        <label><input type="radio" name="q6" value="a"> Quelle que soit la chose</label>
+        <label><input type="radio" name="q6" value="b"> Bien que / même si</label>
+        <label><input type="radio" name="q6" value="c"> Sinon</label>
+        <label><input type="radio" name="q6" value="d"> Dès que</label>
+      </div>
+
+      <!-- 7 -->
+      <div class="question" data-q="7">
+        <div class="meta">Q7 — Choix unique</div>
+        <strong>7. «Quoi que» (avec espace) signifie plutôt :</strong>
+        <label><input type="radio" name="q7" value="a"> Quelle que soit la chose que...</label>
+        <label><input type="radio" name="q7" value="b"> Immédiatement</label>
+        <label><input type="radio" name="q7" value="c"> De préférence</label>
+        <label><input type="radio" name="q7" value="d"> Jamais</label>
+      </div>
+
+      <!-- 8 -->
+      <div class="question" data-q="8">
+        <div class="meta">Q8 — Choix multiple</div>
+        <strong>8. Parmi ces phrases, lesquelles illustrent correctement «sitôt» ? (plusieurs réponses possibles)</strong>
+        <label><input type="checkbox" name="q8" value="a"> Sitôt arrivés, ils ont commencé à manger.</label>
+        <label><input type="checkbox" name="q8" value="b"> Sitôt que vous le pourrez, appelez-moi.</label>
+        <label><input type="checkbox" name="q8" value="c"> Sitôt signifie «à une heure précise»</label>
+        <label><input type="checkbox" name="q8" value="d"> Sitôt = «de préférence»</label>
+      </div>
+
+      <!-- 9 -->
+      <div class="question" data-q="9">
+        <div class="meta">Q9 — Choix unique</div>
+        <strong>9. «Sinon» sert à exprimer :</strong>
+        <label><input type="radio" name="q9" value="a"> Une alternative, un cas contraire</label>
+        <label><input type="radio" name="q9" value="b"> Une obligation légale</label>
+        <label><input type="radio" name="q9" value="c"> Un synonyme de «si non» toujours</label>
+        <label><input type="radio" name="q9" value="d"> Rien</label>
+      </div>
+
+      <!-- 10 -->
+      <div class="question" data-q="10">
+        <div class="meta">Q10 — Choix unique</div>
+        <strong>10. «Si non» (locution) s'oppose à :</strong>
+        <label><input type="radio" name="q10" value="a"> Si oui</label>
+        <label><input type="radio" name="q10" value="b"> Sinon</label>
+        <label><input type="radio" name="q10" value="c"> Sitôt</label>
+        <label><input type="radio" name="q10" value="d"> Quoique</label>
+      </div>
+
+      <!-- 11 -->
+      <div class="question" data-q="11">
+        <div class="meta">Q11 — Choix unique</div>
+        <strong>11. «Acquit» (nom) désigne :</strong>
+        <label><input type="radio" name="q11" value="a"> Une reconnaissance écrite d'un paiement reçu</label>
+        <label><input type="radio" name="q11" value="b"> Un savoir acquis</label>
+        <label><input type="radio" name="q11" value="c"> Un verbe</label>
+        <label><input type="radio" name="q11" value="d"> Une erreur orthographique</label>
+      </div>
+
+      <!-- 12 -->
+      <div class="question" data-q="12">
+        <div class="meta">Q12 — Choix unique</div>
+        <strong>12. «Acquis» peut être :</strong>
+        <label><input type="radio" name="q12" value="a"> Le participe passé d'acquérir ou un substantif désignant un savoir</label>
+        <label><input type="radio" name="q12" value="b"> Un synonyme d'acquit (toujours)</label>
+        <label><input type="radio" name="q12" value="c"> Un adverbe</label>
+        <label><input type="radio" name="q12" value="d"> Une conjonction</label>
+      </div>
+
+      <!-- 13 -->
+      <div class="question" data-q="13">
+        <div class="meta">Q13 — Choix multiple</div>
+        <strong>13. «Appel» vs «appelle» : lesquelles sont vraies ?</strong>
+        <label><input type="checkbox" name="q13" value="a"> «Appel» est un nom (un coup de téléphone)</label>
+        <label><input type="checkbox" name="q13" value="b"> «Appelle» est une forme verbale (j'appelle, il appelle)</label>
+        <label><input type="checkbox" name="q13" value="c"> Les deux sont interchangeables sans règle</label>
+        <label><input type="checkbox" name="q13" value="d"> «Appel» est toujours un verbe</label>
+      </div>
+
+      <!-- 14 -->
+      <div class="question" data-q="14">
+        <div class="meta">Q14 — Choix multiple</div>
+        <strong>14. «Appui» vs «appuie» : lesquelles sont exactes ?</strong>
+        <label><input type="checkbox" name="q14" value="a"> «Appui» est un nom (soutien)</label>
+        <label><input type="checkbox" name="q14" value="b"> «Appuie» est une forme du verbe appuyer (il appuie)</label>
+        <label><input type="checkbox" name="q14" value="c"> «Appui» est un verbe</label>
+        <label><input type="checkbox" name="q14" value="d"> Les deux signifient toujours la même chose</label>
+      </div>
+
+      <!-- 15 -->
+      <div class="question" data-q="15">
+        <div class="meta">Q15 — Choix unique</div>
+        <strong>15. «Attribut» (nom) signifie :</strong>
+        <label><input type="radio" name="q15" value="a"> Caractère propre, qualité</label>
+        <label><input type="radio" name="q15" value="b"> Verbe conjugué</label>
+        <label><input type="radio" name="q15" value="c"> Une ponctuation</label>
+        <label><input type="radio" name="q15" value="d"> Un adverbe</label>
+      </div>
+
+      <!-- 16 -->
+      <div class="question" data-q="16">
+        <div class="meta">Q16 — Choix unique</div>
+        <strong>16. «Attribue» est :</strong>
+        <label><input type="radio" name="q16" value="a"> Une forme verbale (on attribue quelque chose)</label>
+        <label><input type="radio" name="q16" value="b"> Un nom</label>
+        <label><input type="radio" name="q16" value="c"> Un adverbe</label>
+        <label><input type="radio" name="q16" value="d"> Une conjonction</label>
+      </div>
+
+      <!-- 17 -->
+      <div class="question" data-q="17">
+        <div class="meta">Q17 — Choix multiple</div>
+        <strong>17. Parmi ces paires, lesquelles sont des homophones grammaticaux ?</strong>
+        <label><input type="checkbox" name="q17" value="a"> la / là</label>
+        <label><input type="checkbox" name="q17" value="b"> que / qu'est</label>
+        <label><input type="checkbox" name="q17" value="c"> ou / où</label>
+        <label><input type="checkbox" name="q17" value="d"> ache / achet</label>
+      </div>
+
+      <!-- 18 -->
+      <div class="question" data-q="18">
+        <div class="meta">Q18 — Choix unique</div>
+        <strong>18. Pourquoi les homophones posent-ils souvent problème ?</strong>
+        <label><input type="radio" name="q18" value="a"> À cause de la prononciation identique mais orthographe/sens différents</label>
+        <label><input type="radio" name="q18" value="b"> Parce qu'ils ont tous la même orthographe</label>
+        <label><input type="radio" name="q18" value="c"> Parce qu'ils ne sont jamais utilisés</label>
+        <label><input type="radio" name="q18" value="d"> Parce que ce sont des mots étrangers</label>
+      </div>
+
+      <!-- 19 -->
+      <div class="question" data-q="19">
+        <div class="meta">Q19 — Choix multiple</div>
+        <strong>19. Quelles stratégies aident à différencier des homophones ?</strong>
+        <label><input type="checkbox" name="q19" value="a"> Vérifier la fonction grammaticale dans la phrase</label>
+        <label><input type="checkbox" name="q19" value="b"> Consulter un dictionnaire</label>
+        <label><input type="checkbox" name="q19" value="c"> Se fier uniquement à la prononciation</label>
+        <label><input type="checkbox" name="q19" value="d"> Ignorer le contexte</label>
+      </div>
+
+      <!-- 20 -->
+      <div class="question" data-q="20">
+        <div class="meta">Q20 — Choix unique</div>
+        <strong>20. La paire «la / là» est un exemple de :</strong>
+        <label><input type="radio" name="q20" value="a"> Homophones grammaticaux</label>
+        <label><input type="radio" name="q20" value="b"> Homophones lexicaux</label>
+        <label><input type="radio" name="q20" value="c"> Antonymes</label>
+        <label><input type="radio" name="q20" value="d"> Synonymes</label>
+      </div>
+
+      <!-- 21 -->
+      <div class="question" data-q="21">
+        <div class="meta">Q21 — Choix multiple</div>
+        <strong>21. «La voie» et «la voix» : lesquelles sont vraies ?</strong>
+        <label><input type="checkbox" name="q21" value="a"> Se prononcent de la même façon</label>
+        <label><input type="checkbox" name="q21" value="b"> Ont le même sens</label>
+        <label><input type="checkbox" name="q21" value="c"> S'écrivent différemment</label>
+        <label><input type="checkbox" name="q21" value="d"> Sont interchangeables</label>
+      </div>
+
+      <!-- 22 -->
+      <div class="question" data-q="22">
+        <div class="meta">Q22 — Choix unique</div>
+        <strong>22. Dans la phrase «Je partirai, quoi que vous en pensiez», «quoi que» signifie :</strong>
+        <label><input type="radio" name="q22" value="a"> Quelle que soit la chose que</label>
+        <label><input type="radio" name="q22" value="b"> Immédiatement</label>
+        <label><input type="radio" name="q22" value="c"> Sinon</label>
+        <label><input type="radio" name="q22" value="d"> De préférence</label>
+      </div>
+
+      <!-- 23 -->
+      <div class="question" data-q="23">
+        <div class="meta">Q23 — Choix unique</div>
+        <strong>23. On écrit «sitôt que» pour exprimer :</strong>
+        <label><input type="radio" name="q23" value="a"> Dès que</label>
+        <label><input type="radio" name="q23" value="b"> Quelle que soit la chose</label>
+        <label><input type="radio" name="q23" value="c"> À cause de</label>
+        <label><input type="radio" name="q23" value="d"> Sans quoi</label>
+      </div>
+
+      <!-- 24 -->
+      <div class="question" data-q="24">
+        <div class="meta">Q24 — Choix multiple</div>
+        <strong>24. Parmi ces paires, lesquelles appartiennent aux homophones lexicaux étudiés dans la leçon ?</strong>
+        <label><input type="checkbox" name="q24" value="a"> Aussitôt / Aussi tôt</label>
+        <label><input type="checkbox" name="q24" value="b"> Bientôt / Bien tôt</label>
+        <label><input type="checkbox" name="q24" value="c"> Plutôt / Plus tôt</label>
+        <label><input type="checkbox" name="q24" value="d"> Où / Ou</label>
+      </div>
+
+      <!-- 25 -->
+      <div class="question" data-q="25">
+        <div class="meta">Q25 — Choix unique</div>
+        <strong>25. Dans «Il est venu plus tôt que prévu», «plus tôt» signifie :</strong>
+        <label><input type="radio" name="q25" value="a"> Avant</label>
+        <label><input type="radio" name="q25" value="b"> De préférence</label>
+        <label><input type="radio" name="q25" value="c"> Immédiatement</label>
+        <label><input type="radio" name="q25" value="d"> Jamais</label>
+      </div>
+
+      <!-- 26 -->
+      <div class="question" data-q="26">
+        <div class="meta">Q26 — Choix multiple</div>
+        <strong>26. Pour éviter les erreurs avec les homophones, on peut : (choix multiples)</strong>
+        <label><input type="checkbox" name="q26" value="a"> Relire le contexte</label>
+        <label><input type="checkbox" name="q26" value="b"> Connaître la classe grammaticale</label>
+        <label><input type="checkbox" name="q26" value="c"> Se baser uniquement sur la prononciation</label>
+        <label><input type="checkbox" name="q26" value="d"> Utiliser un dictionnaire</label>
+      </div>
+
+      <!-- 27 -->
+      <div class="question" data-q="27">
+        <div class="meta">Q27 — Choix unique</div>
+        <strong>27. «Appelle» dans «Il appelle son ami» est :</strong>
+        <label><input type="radio" name="q27" value="a"> Une forme verbale</label>
+        <label><input type="radio" name="q27" value="b"> Un nom</label>
+        <label><input type="radio" name="q27" value="c"> Un adverbe</label>
+        <label><input type="radio" name="q27" value="d"> Une préposition</label>
+      </div>
+
+      <!-- 28 -->
+      <div class="question" data-q="28">
+        <div class="meta">Q28 — Choix unique</div>
+        <strong>28. «Appui» dans «Il a besoin d'appui» est :</strong>
+        <label><input type="radio" name="q28" value="a"> Un nom</label>
+        <label><input type="radio" name="q28" value="b"> Un verbe</label>
+        <label><input type="radio" name="q28" value="c"> Un adverbe</label>
+        <label><input type="radio" name="q28" value="d"> Une ponctuation</label>
+      </div>
+
+      <!-- 29 -->
+      <div class="question" data-q="29">
+        <div class="meta">Q29 — Choix multiple</div>
+        <strong>29. Parmi ces affirmations, lesquelles sont vraies d'après la leçon ?</strong>
+        <label><input type="checkbox" name="q29" value="a"> La prononciation identique est la seule source d'erreurs</label>
+        <label><input type="checkbox" name="q29" value="b"> Le contexte aide à choisir la bonne orthographe</label>
+        <label><input type="checkbox" name="q29" value="c"> On doit connaître la classe grammaticale</label>
+        <label><input type="checkbox" name="q29" value="d"> Les homophones n'existent qu'en français</label>
+      </div>
+
+      <!-- 30 -->
+      <div class="question" data-q="30">
+        <div class="meta">Q30 — Choix unique</div>
+        <strong>30. Quel outil est particulièrement utile pour bien distinguer des homophones ?</strong>
+        <label><input type="radio" name="q30" value="a"> Dictionnaire (ou outil de référence)</label>
+        <label><input type="radio" name="q30" value="b"> Deviner au hasard</label>
+        <label><input type="radio" name="q30" value="c"> Ignorer l'orthographe</label>
+        <label><input type="radio" name="q30" value="d"> La seule prononciation</label>
+      </div>
+
+      <!-- 31 -->
+      <div class="question" data-q="31">
+        <div class="meta">Q31 — Choix multiple</div>
+        <strong>31. Choisissez les bonnes méthodes pour travailler la maîtrise des homophones :</strong>
+        <label><input type="checkbox" name="q31" value="a"> Faire des exercices réguliers</label>
+        <label><input type="checkbox" name="q31" value="b"> Lire et analyser des phrases</label>
+        <label><input type="checkbox" name="q31" value="c"> Ignorer la grammaire</label>
+        <label><input type="checkbox" name="q31" value="d"> Apprendre les règles et exceptions</label>
+      </div>
+
+      <!-- 32 -->
+      <div class="question" data-q="32">
+        <div class="meta">Q32 — Choix unique</div>
+        <strong>32. La phrase «Les étudiants seront bientôt en vacances» utilise «bientôt» au sens de :</strong>
+        <label><input type="radio" name="q32" value="a"> Dans peu de temps</label>
+        <label><input type="radio" name="q32" value="b"> Très tôt (horaire)</label>
+        <label><input type="radio" name="q32" value="c"> Immédiatement</label>
+        <label><input type="radio" name="q32" value="d"> Jamais</label>
+      </div>
+
+      <div id="actions" class="btn-row">
+        <button type="button" id="submit">Calculer mon score</button>
+        <button type="button" id="reset">Réinitialiser</button>
+      </div>
+
+      <p id="score" class="score" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer>
+    © 2025 TOBA PAUL CHRIST-EMMANUEL
+  </footer>
+
+  <script>
+    /* Réponses attendues (lettres) */
+    const answers = {
+      q1: ['a'],
+      q2: ['b'],
+      q3: ['b'],
+      q4: ['a'],
+      q5: ['a'],
+      q6: ['b'],
+      q7: ['a'],
+      q8: ['a','b'],
+      q9: ['a'],
+      q10: ['a'],
+      q11: ['a'],
+      q12: ['a'],
+      q13: ['a','b'],
+      q14: ['a','b'],
+      q15: ['a'],
+      q16: ['a'],
+      q17: ['a','c'],
+      q18: ['a'],
+      q19: ['a','b','d'],
+      q20: ['a'],
+      q21: ['a','c'],
+      q22: ['a'],
+      q23: ['a'],
+      q24: ['a','b','c'],
+      q25: ['a'],
+      q26: ['a','b','d'],
+      q27: ['a'],
+      q28: ['a'],
+      q29: ['b','c'],
+      q30: ['a'],
+      q31: ['a','b','d'],
+      q32: ['a']
+    };
+
+    function normalize(arr){
+      return arr.slice().sort();
+    }
+
+    function getSelected(name){
+      const els = Array.from(document.querySelectorAll('[name="'+name+'"]'));
+      if(els.length === 0) return [];
+      if(els[0].type === 'radio'){
+        const checked = document.querySelector('[name="'+name+'"]:checked');
+        return checked ? [checked.value] : [];
+      } else if(els[0].type === 'checkbox'){
+        return els.filter(e => e.checked).map(e => e.value);
+      }
+      return [];
+    }
+
+    function ensureFeedback(qIndex){
+      let fb = document.getElementById('feedback'+qIndex);
+      if(fb) return fb;
+      const container = document.querySelector('[data-q="'+qIndex+'"]');
+      if(!container) return null;
+      fb = document.createElement('div');
+      fb.id = 'feedback'+qIndex;
+      fb.className = 'result';
+      container.appendChild(fb);
+      return fb;
+    }
+
+    function calculateScore(){
+      const keys = Object.keys(answers);
+      let score = 0;
+      keys.forEach(k => {
+        const qIndex = k.replace('q','');
+        const fb = ensureFeedback(qIndex);
+        if(fb) fb.innerHTML = '';
+        const user = normalize(getSelected(k));
+        const corr = normalize(answers[k]);
+        const ok = JSON.stringify(user) === JSON.stringify(corr);
+        if(ok){
+          score++;
+          if(fb) fb.innerHTML = '<span class="correct">✅ Correct</span>';
+        } else {
+          if(fb){
+            // build expected text
+            const inputs = Array.from(document.querySelectorAll('[name="'+k+'"]'));
+            const expected = answers[k].map(letter => {
+              const el = inputs.find(i => i.value === letter);
+              return el ? el.parentElement.innerText.trim() : letter;
+            }).join(' — ');
+            fb.innerHTML = '<span class="incorrect">❌ Mauvaise réponse. Réponse(s) attendue(s) : '+ expected + '</span>';
+          }
+        }
+      });
+      document.getElementById('score').innerText = 'Votre score : ' + score + ' / ' + keys.length;
+      // scroll to score on small screens
+      document.getElementById('score').scrollIntoView({behavior:'smooth', block:'center'});
+    }
+
+    function resetQuiz(){
+      // uncheck all
+      const inputs = Array.from(document.querySelectorAll('#quiz input'));
+      inputs.forEach(i => i.checked = false);
+      // clear feedbacks
+      const results = Array.from(document.querySelectorAll('.result'));
+      results.forEach(r => r.innerHTML = '');
+      document.getElementById('score').innerText = '';
+      window.scrollTo({top:0, behavior:'smooth'});
+    }
+
+    document.getElementById('submit').addEventListener('click', calculateScore);
+    document.getElementById('reset').addEventListener('click', resetQuiz);
+  </script>
+</body>
+</html>
