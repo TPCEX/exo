@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QCM — Concepts de management</title>
+  <style>
+    :root{
+      --bg:#f4f6f9;
+      --card:#fff;
+      --accent:#3498db;
+      --accent-dark:#2980b9;
+      --navy:#2c3e50;
+    }
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;margin:0;min-height:100vh;display:flex;flex-direction:column;background:var(--bg);color:#102a43}
+    header{display:flex;align-items:center;justify-content:center;background:var(--navy);padding:16px;color:white}
+    header img{height:50px;margin-right:12px;border-radius:6px}
+    main{flex:1;max-width:1000px;margin:18px auto;padding:18px;width:96%}
+    h1.page-title{color:#fff;background:var(--navy);padding:12px;border-radius:8px;text-align:center;margin:0 0 16px}
+    .intro{max-width:900px;margin:0 auto 12px;color:#334e68;text-align:center}
+    .question{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 20px rgba(16,42,67,.06);margin-bottom:12px}
+    .meta{font-size:0.85rem;color:#486581;margin-bottom:6px}
+    .question strong{display:block;margin-bottom:8px}
+    label{display:block;margin:6px 0;cursor:pointer}
+    input[type="radio"], input[type="checkbox"]{margin-right:8px}
+    .result{margin-top:10px;font-weight:700;min-height:1.2em}
+    .correct{color:green}
+    .incorrect{color:#c72c41}
+    #actions{display:flex;justify-content:center;gap:12px;margin-top:16px}
+    button{padding:10px 16px;background:var(--accent);color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:1rem}
+    button:hover{background:var(--accent-dark)}
+    .score{margin-top:14px;text-align:center;font-weight:800;color:var(--navy)}
+    footer{background:var(--navy);color:#fff;padding:12px;text-align:center}
+    .btn-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+    @media (max-width:768px){
+      body{font-size:15px}
+      .question{padding:12px}
+      button{width:100%;max-width:420px}
+      .btn-row{flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <img src="WhatsApp Image 2025-10-03 at 14.13.33_c0b3d3e4.jpg" alt="Logo">
+        <h1>Communauté Virtuelle de Yop.Nord</h1>
+      </header>
+
+  <main>
+    <h1 class="page-title">QCM — Chapitre 1 : Concepts de management (32 questions)</h1>
+
+
+    <form id="quiz">
+
+      <!-- 1 -->
+      <div class="question" data-q="1">
+        <div class="meta">Q1 — Choix unique</div>
+        <strong>1. Une organisation peut être définie comme :</strong>
+        <label><input type="radio" name="q1" value="a"> Une entité créée pour conduire une action collective</label>
+        <label><input type="radio" name="q1" value="b"> Un individu travaillant seul</label>
+        <label><input type="radio" name="q1" value="c"> Un type de produit</label>
+        <label><input type="radio" name="q1" value="d"> Un outil informatique</label>
+      </div>
+
+      <!-- 2 -->
+      <div class="question" data-q="2">
+        <div class="meta">Q2 — Choix unique</div>
+        <strong>2. Le management consiste principalement à :</strong>
+        <label><input type="radio" name="q2" value="a"> Diriger, organiser et contrôler une organisation pour atteindre des objectifs</label>
+        <label><input type="radio" name="q2" value="b"> Fabriquer des produits</label>
+        <label><input type="radio" name="q2" value="c"> Payer les impôts</label>
+        <label><input type="radio" name="q2" value="d"> Exercer une fonction exclusivement technique</label>
+      </div>
+
+      <!-- 3 -->
+      <div class="question" data-q="3">
+        <div class="meta">Q3 — Choix multiple</div>
+        <strong>3. Parmi les verbes suivants, lesquels font partie des activités classiques du management (PODC) ?</strong>
+        <label><input type="checkbox" name="q3" value="a"> Planifier</label>
+        <label><input type="checkbox" name="q3" value="b"> Organiser</label>
+        <label><input type="checkbox" name="q3" value="c"> Danser</label>
+        <label><input type="checkbox" name="q3" value="d"> Contrôler</label>
+      </div>
+
+      <!-- 4 -->
+      <div class="question" data-q="4">
+        <div class="meta">Q4 — Choix unique</div>
+        <strong>4. Fayol a présenté des fonctions administratives comprenant :</strong>
+        <label><input type="radio" name="q4" value="a"> Prévoir, organiser, commander, coordonner, contrôler</label>
+        <label><input type="radio" name="q4" value="b"> Créer, détruire, oublier</label>
+        <label><input type="radio" name="q4" value="c"> Se reposer, dormir</label>
+        <label><input type="radio" name="q4" value="d"> Fonctionner sans règles</label>
+      </div>
+
+      <!-- 5 -->
+      <div class="question" data-q="5">
+        <div class="meta">Q5 — Choix unique</div>
+        <strong>5. Le management est-il :</strong>
+        <label><input type="radio" name="q5" value="a"> Exclusivement une science</label>
+        <label><input type="radio" name="q5" value="b"> Exclusivement un art</label>
+        <label><input type="radio" name="q5" value="c"> À la fois art et science</label>
+        <label><input type="radio" name="q5" value="d"> Ni l'un ni l'autre</label>
+      </div>
+
+      <!-- 6 -->
+      <div class="question" data-q="6">
+        <div class="meta">Q6 — Choix multiple</div>
+        <strong>6. Quelles qualités sont associées à l'aspect «art» du management ?</strong>
+        <label><input type="checkbox" name="q6" value="a"> Intuition</label>
+        <label><input type="checkbox" name="q6" value="b"> Créativité relationnelle</label>
+        <label><input type="checkbox" name="q6" value="c"> Calcul mathématique pur</label>
+        <label><input type="checkbox" name="q6" value="d"> Aptitudes personnelles</label>
+      </div>
+
+      <!-- 7 -->
+      <div class="question" data-q="7">
+        <div class="meta">Q7 — Choix unique</div>
+        <strong>7. Parmi les principes de base du management, lequel consiste à déléguer pour rendre les collaborateurs acteurs ?</strong>
+        <label><input type="radio" name="q7" value="a"> Enrichir les compétences</label>
+        <label><input type="radio" name="q7" value="b"> Rendre les collaborateurs autonomes</label>
+        <label><input type="radio" name="q7" value="c"> Sanctionner</label>
+        <label><input type="radio" name="q7" value="d"> Respecter la hiérarchie</label>
+      </div>
+
+      <!-- 8 -->
+      <div class="question" data-q="8">
+        <div class="meta">Q8 — Choix multiple</div>
+        <strong>8. Quelles actions relèvent des principes de base du management énoncés ?</strong>
+        <label><input type="checkbox" name="q8" value="a"> Établir des relations privilégiées</label>
+        <label><input type="checkbox" name="q8" value="b"> Faire vivre une éthique</label>
+        <label><input type="checkbox" name="q8" value="c"> Ignorer les niveaux hiérarchiques</label>
+        <label><input type="checkbox" name="q8" value="d"> Définir un contrat clair</label>
+      </div>
+
+      <!-- 9 -->
+      <div class="question" data-q="9">
+        <div class="meta">Q9 — Choix unique</div>
+        <strong>9. «Enrichir les compétences» signifie :</strong>
+        <label><input type="radio" name="q9" value="a"> Former et transmettre le savoir-faire</label>
+        <label><input type="radio" name="q9" value="b"> Réduire les responsabilités</label>
+        <label><input type="radio" name="q9" value="c"> Supprimer les évaluations</label>
+        <label><input type="radio" name="q9" value="d"> Imposer le silence</label>
+      </div>
+
+      <!-- 10 -->
+      <div class="question" data-q="10">
+        <div class="meta">Q10 — Choix unique</div>
+        <strong>10. Respecter les niveaux hiérarchiques intermédiaires veut dire :</strong>
+        <label><input type="radio" name="q10" value="a"> Passer systématiquement par le niveau N-1 avant N-2</label>
+        <label><input type="radio" name="q10" value="b"> Toujours court-circuiter la hiérarchie</label>
+        <label><input type="radio" name="q10" value="c"> Ignorer les interlocuteurs</label>
+        <label><input type="radio" name="q10" value="d"> Remplacer la hiérarchie par des sondages</label>
+      </div>
+
+      <!-- 11 -->
+      <div class="question" data-q="11">
+        <div class="meta">Q11 — Choix unique</div>
+        <strong>11. Le management repose souvent sur 4 activités. Lesquelles ?</strong>
+        <label><input type="radio" name="q11" value="a"> Planification, organisation, direction, contrôle</label>
+        <label><input type="radio" name="q11" value="b"> Achat, vente, stockage, livraison</label>
+        <label><input type="radio" name="q11" value="c"> Dormir, manger, courir, sauter</label>
+        <label><input type="radio" name="q11" value="d"> Regarder, attendre, fuir, nier</label>
+      </div>
+
+      <!-- 12 -->
+      <div class="question" data-q="12">
+        <div class="meta">Q12 — Choix multiple</div>
+        <strong>12. Parmi les énoncés suivants, lesquels illustrent la solidarité du manager vis-à-vis de ses collaborateurs ?</strong>
+        <label><input type="checkbox" name="q12" value="a"> Appuyer la décision prise par N-1 devant l'équipe</label>
+        <label><input type="checkbox" name="q12" value="b"> Exposer les désaccords publiquement</label>
+        <label><input type="checkbox" name="q12" value="c"> Soutenir l'équipe face à la hiérarchie</label>
+        <label><input type="checkbox" name="q12" value="d"> Ignorer les problèmes</label>
+      </div>
+
+      <!-- 13 -->
+      <div class="question" data-q="13">
+        <div class="meta">Q13 — Choix unique</div>
+        <strong>13. La science du management vise à :</strong>
+        <label><input type="radio" name="q13" value="a"> Accumuler des connaissances systématiques pour comprendre la gestion</label>
+        <label><input type="radio" name="q13" value="b"> Éliminer l'humain du travail</label>
+        <label><input type="radio" name="q13" value="c"> Remplacer les managers par des machines</label>
+        <label><input type="radio" name="q13" value="d"> Refuser toute théorie</label>
+      </div>
+
+      <!-- 14 -->
+      <div class="question" data-q="14">
+        <div class="meta">Q14 — Choix unique</div>
+        <strong>14. Le management moderne met davantage l'accent sur :</strong>
+        <label><input type="radio" name="q14" value="a"> L'art de diriger les hommes pour qu'ils donnent le meilleur d'eux-mêmes</label>
+        <label><input type="radio" name="q14" value="b"> La seule maîtrise technique des machines</label>
+        <label><input type="radio" name="q14" value="c"> L'isolement des équipes</label>
+        <label><input type="radio" name="q14" value="d"> L'interdiction d'apprendre</label>
+      </div>
+
+      <!-- 15 -->
+      <div class="question" data-q="15">
+        <div class="meta">Q15 — Choix multiple</div>
+        <strong>15. Parmi ces éléments, lesquels contribuent à la survie d'une organisation ?</strong>
+        <label><input type="checkbox" name="q15" value="a"> Un bon management</label>
+        <label><input type="checkbox" name="q15" value="b"> Une planification cohérente</label>
+        <label><input type="checkbox" name="q15" value="c"> L'absence totale de règles</label>
+        <label><input type="checkbox" name="q15" value="d"> L'adaptation à l'environnement</label>
+      </div>
+
+      <!-- 16 -->
+      <div class="question" data-q="16">
+        <div class="meta">Q16 — Choix unique</div>
+        <strong>16. Parmi les rôles interpersonnels du manager selon Mintzberg, lequel est associé au fait d'être une figure symbolique ?</strong>
+        <label><input type="radio" name="q16" value="a"> Symbole (figurehead)</label>
+        <label><input type="radio" name="q16" value="b"> Observateur</label>
+        <label><input type="radio" name="q16" value="c"> Entrepreneur</label>
+        <label><input type="radio" name="q16" value="d"> Régulateur</label>
+      </div>
+
+      <!-- 17 -->
+      <div class="question" data-q="17">
+        <div class="meta">Q17 — Choix multiple</div>
+        <strong>17. Quelles activités relèvent des rôles informationnels (Mintzberg) ?</strong>
+        <label><input type="checkbox" name="q17" value="a"> Observateur actif (monitor)</label>
+        <label><input type="checkbox" name="q17" value="b"> Diffuseur (disseminator)</label>
+        <label><input type="checkbox" name="q17" value="c"> Leader</label>
+        <label><input type="checkbox" name="q17" value="d"> Porte-parole (spokesman)</label>
+      </div>
+
+      <!-- 18 -->
+      <div class="question" data-q="18">
+        <div class="meta">Q18 — Choix unique</div>
+        <strong>18. Le rôle décisionnel «entrepreneur» consiste à :</strong>
+        <label><input type="radio" name="q18" value="a"> Chercher des opportunités et initier des projets</label>
+        <label><input type="radio" name="q18" value="b"> Organiser la cantine</label>
+        <label><input type="radio" name="q18" value="c"> Nettoyer les locaux</label>
+        <label><input type="radio" name="q18" value="d"> Gérer uniquement les salaires</label>
+      </div>
+
+      <!-- 19 -->
+      <div class="question" data-q="19">
+        <div class="meta">Q19 — Choix unique</div>
+        <strong>19. Le rôle de «régulateur» (disturbance handler) signifie :</strong>
+        <label><input type="radio" name="q19" value="a"> Traiter et corriger les problèmes majeurs</label>
+        <label><input type="radio" name="q19" value="b"> Organiser des fêtes</label>
+        <label><input type="radio" name="q19" value="c"> Écrire des poèmes</label>
+        <label><input type="radio" name="q19" value="d"> Ignorer les conflits</label>
+      </div>
+
+      <!-- 20 -->
+      <div class="question" data-q="20">
+        <div class="meta">Q20 — Choix unique</div>
+        <strong>20. Le manager en tant que «distributeur des ressources» est responsable de :</strong>
+        <label><input type="radio" name="q20" value="a"> Allouer les ressources pour réaliser les activités</label>
+        <label><input type="radio" name="q20" value="b"> Décorer les bureaux</label>
+        <label><input type="radio" name="q20" value="c"> Envoyer des cartes postales</label>
+        <label><input type="radio" name="q20" value="d"> Cuisiner pour l'équipe</label>
+      </div>
+
+      <!-- 21 -->
+      <div class="question" data-q="21">
+        <div class="meta">Q21 — Choix multiple</div>
+        <strong>21. Le manager joue des rôles interpersonnels. Lesquels ?</strong>
+        <label><input type="checkbox" name="q21" value="a"> Symbole (figurehead)</label>
+        <label><input type="checkbox" name="q21" value="b"> Leader</label>
+        <label><input type="checkbox" name="q21" value="c"> Observateur actif</label>
+        <label><input type="checkbox" name="q21" value="d"> Agent de liaison</label>
+      </div>
+
+      <!-- 22 -->
+      <div class="question" data-q="22">
+        <div class="meta">Q22 — Choix unique</div>
+        <strong>22. Le rôle «diffuseur» consiste à :</strong>
+        <label><input type="radio" name="q22" value="a"> Transmettre l'information collectée aux membres de l'organisation</label>
+        <label><input type="radio" name="q22" value="b"> Surveiller le personnel 24h/24</label>
+        <label><input type="radio" name="q22" value="c"> Faire des présentations artistiques</label>
+        <label><input type="radio" name="q22" value="d"> Tenir un journal intime</label>
+      </div>
+
+      <!-- 23 -->
+      <div class="question" data-q="23">
+        <div class="meta">Q23 — Choix unique</div>
+        <strong>23. La négociation (negociator) est associée au rôle :</strong>
+        <label><input type="radio" name="q23" value="a"> Décisionnel</label>
+        <label><input type="radio" name="q23" value="b"> Informationnel</label>
+        <label><input type="radio" name="q23" value="c"> Interpersonnel</label>
+        <label><input type="radio" name="q23" value="d"> Aucun</label>
+      </div>
+
+      <!-- 24 -->
+      <div class="question" data-q="24">
+        <div class="meta">Q24 — Choix multiple</div>
+        <strong>24. Parmi ces pratiques, lesquelles aident à bâtir des relations motivantes ?</strong>
+        <label><input type="checkbox" name="q24" value="a"> Encourager les progrès</label>
+        <label><input type="checkbox" name="q24" value="b"> Valoriser les réussites</label>
+        <label><input type="checkbox" name="q24" value="c"> Ignorer les efforts</label>
+        <label><input type="checkbox" name="q24" value="d"> Critiquer systématiquement</label>
+      </div>
+
+      <!-- 25 -->
+      <div class="question" data-q="25">
+        <div class="meta">Q25 — Choix unique</div>
+        <strong>25. Définir un contrat clair signifie :</strong>
+        <label><input type="radio" name="q25" value="a"> Préciser les attentes, objectifs et comportements attendus</label>
+        <label><input type="radio" name="q25" value="b"> Offrir uniquement des avantages</label>
+        <label><input type="radio" name="q25" value="c"> Refuser toute évaluation</label>
+        <label><input type="radio" name="q25" value="d"> Annoncer des sanctions sans explication</label>
+      </div>
+
+      <!-- 26 -->
+      <div class="question" data-q="26">
+        <div class="meta">Q26 — Choix multiple</div>
+        <strong>26. Pour améliorer la qualité du management, on peut :</strong>
+        <label><input type="checkbox" name="q26" value="a"> Former les collaborateurs</label>
+        <label><input type="checkbox" name="q26" value="b"> Définir des règles précises</label>
+        <label><input type="checkbox" name="q26" value="c"> Supprimer toute communication</label>
+        <label><input type="checkbox" name="q26" value="d"> Encourager la solidarité</label>
+      </div>
+
+      <!-- 27 -->
+      <div class="question" data-q="27">
+        <div class="meta">Q27 — Choix unique</div>
+        <strong>27. Quelle affirmation est vraie ?</strong>
+        <label><input type="radio" name="q27" value="a"> Le manager ne doit jamais sanctionner quand une règle est violée</label>
+        <label><input type="radio" name="q27" value="b"> Le manager doit sanctionner les comportements hors-jeu pour préserver l'ordre</label>
+        <label><input type="radio" name="q27" value="c"> Le manager doit ignorer les règles</label>
+        <label><input type="radio" name="q27" value="d"> Les sanctions ne servent qu'à punir sans objectif</label>
+      </div>
+
+      <!-- 28 -->
+      <div class="question" data-q="28">
+        <div class="meta">Q28 — Choix unique</div>
+        <strong>28. Un bon manager doit :</strong>
+        <label><input type="radio" name="q28" value="a"> Développer des compétences théoriques et pratiques</label>
+        <label><input type="radio" name="q28" value="b"> Se reposer uniquement sur le hasard</label>
+        <label><input type="radio" name="q28" value="c"> Être intransigeant en toutes circonstances</label>
+        <label><input type="radio" name="q28" value="d"> Ignorer la formation</label>
+      </div>
+
+      <!-- 29 -->
+      <div class="question" data-q="29">
+        <div class="meta">Q29 — Choix multiple</div>
+        <strong>29. Les théories fondatrices du management incluent :</strong>
+        <label><input type="checkbox" name="q29" value="a"> Gestion scientifique du travail (Taylor)</label>
+        <label><input type="checkbox" name="q29" value="b"> Théorie administrative (Fayol)</label>
+        <label><input type="checkbox" name="q29" value="c"> Théorie de la contingence</label>
+        <label><input type="checkbox" name="q29" value="d"> Théorie de la gravitation</label>
+      </div>
+
+      <!-- 30 -->
+      <div class="question" data-q="30">
+        <div class="meta">Q30 — Choix unique</div>
+        <strong>30. Le manager en tant qu'«agent de liaison» doit :</strong>
+        <label><input type="radio" name="q30" value="a"> Créer et entretenir des contacts internes et externes</label>
+        <label><input type="radio" name="q30" value="b"> Rester isolé</label>
+        <label><input type="radio" name="q30" value="c"> Ne parler qu'avec ses amis</label>
+        <label><input type="radio" name="q30" value="d"> S'occuper seulement de finances</label>
+      </div>
+
+      <!-- 31 -->
+      <div class="question" data-q="31">
+        <div class="meta">Q31 — Choix multiple</div>
+        <strong>31. Pour favoriser l'autonomie des collaborateurs, un manager peut :</strong>
+        <label><input type="checkbox" name="q31" value="a"> Déléguer des responsabilités</label>
+        <label><input type="checkbox" name="q31" value="b"> Fournir des repères et objectifs clairs</label>
+        <label><input type="checkbox" name="q31" value="c"> Confisquer les décisions</label>
+        <label><input type="checkbox" name="q31" value="d"> Ignorer la formation</label>
+      </div>
+
+      <!-- 32 -->
+      <div class="question" data-q="32">
+        <div class="meta">Q32 — Choix unique</div>
+        <strong>32. Selon le chapitre, le management est une variable déterminante pour :</strong>
+        <label><input type="radio" name="q32" value="a"> La survie et la performance des organisations</label>
+        <label><input type="radio" name="q32" value="b"> L'extinction des entreprises</label>
+        <label><input type="radio" name="q32" value="c"> L'abandon des objectifs</label>
+        <label><input type="radio" name="q32" value="d"> La suppression du travail</label>
+      </div>
+
+      <div id="actions" class="btn-row">
+        <button type="button" id="submit">Calculer mon score</button>
+        <button type="button" id="reset">Réinitialiser</button>
+      </div>
+
+      <p id="score" class="score" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer>
+    © 2025 TOBA PAUL CHRIST-EMMANUEL
+  </footer>
+
+  <script>
+    /* Réponses attendues (lettres) */
+    const answers = {
+      q1: ['a'],
+      q2: ['a'],
+      q3: ['a','b','d'],
+      q4: ['a'],
+      q5: ['c'],
+      q6: ['a','b','d'],
+      q7: ['b'],
+      q8: ['a','b','d'],
+      q9: ['a'],
+      q10: ['a'],
+      q11: ['a'],
+      q12: ['a','c'],
+      q13: ['a'],
+      q14: ['a'],
+      q15: ['a','b','d'],
+      q16: ['a'],
+      q17: ['a','b','d'],
+      q18: ['a'],
+      q19: ['a'],
+      q20: ['a'],
+      q21: ['a','b','d'],
+      q22: ['a'],
+      q23: ['a'],
+      q24: ['a','b'],
+      q25: ['a'],
+      q26: ['a','b','d'],
+      q27: ['b'],
+      q28: ['a'],
+      q29: ['a','b','c'],
+      q30: ['a'],
+      q31: ['a','b'],
+      q32: ['a']
+    };
+
+    function normalize(arr){
+      return arr.slice().sort();
+    }
+
+    function getSelected(name){
+      const els = Array.from(document.querySelectorAll('[name="'+name+'"]'));
+      if(els.length === 0) return [];
+      if(els[0].type === 'radio'){
+        const checked = document.querySelector('[name="'+name+'"]:checked');
+        return checked ? [checked.value] : [];
+      } else if(els[0].type === 'checkbox'){
+        return els.filter(e => e.checked).map(e => e.value);
+      }
+      return [];
+    }
+
+    function ensureFeedback(qIndex){
+      let fb = document.getElementById('feedback'+qIndex);
+      if(fb) return fb;
+      const container = document.querySelector('[data-q="'+qIndex+'"]');
+      if(!container) return null;
+      fb = document.createElement('div');
+      fb.id = 'feedback'+qIndex;
+      fb.className = 'result';
+      container.appendChild(fb);
+      return fb;
+    }
+
+    function calculateScore(){
+      const keys = Object.keys(answers);
+      let score = 0;
+      keys.forEach(k => {
+        const qIndex = k.replace('q','');
+        const fb = ensureFeedback(qIndex);
+        if(fb) fb.innerHTML = '';
+        const user = normalize(getSelected(k));
+        const corr = normalize(answers[k]);
+        const ok = JSON.stringify(user) === JSON.stringify(corr);
+        if(ok){
+          score++;
+          if(fb) fb.innerHTML = '<span class="correct">✅ Correct</span>';
+        } else {
+          if(fb){
+            const inputs = Array.from(document.querySelectorAll('[name="'+k+'"]'));
+            const expected = answers[k].map(letter => {
+              const el = inputs.find(i => i.value === letter);
+              return el ? el.parentElement.innerText.trim() : letter;
+            }).join(' — ');
+            fb.innerHTML = '<span class="incorrect">❌ Mauvaise réponse. Réponse(s) attendue(s) : '+ expected + '</span>';
+          }
+        }
+      });
+      document.getElementById('score').innerText = 'Votre score : ' + score + ' / ' + keys.length;
+      document.getElementById('score').scrollIntoView({behavior:'smooth', block:'center'});
+    }
+
+    function resetQuiz(){
+      const inputs = Array.from(document.querySelectorAll('#quiz input'));
+      inputs.forEach(i => i.checked = false);
+      const results = Array.from(document.querySelectorAll('.result'));
+      results.forEach(r => r.innerHTML = '');
+      document.getElementById('score').innerText = '';
+      window.scrollTo({top:0, behavior:'smooth'});
+    }
+
+    document.getElementById('submit').addEventListener('click', calculateScore);
+    document.getElementById('reset').addEventListener('click', resetQuiz);
+  </script>
+</body>
+</html>
